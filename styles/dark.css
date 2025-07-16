@@ -85,3 +85,13 @@ p {
     line-height: 1.6;
     color: var(--monokai-text);
 }
+::selection {
+  background-color: var(--monokai-pink);
+  color: #000000; /* black text */
+}
+
+::-moz-selection {
+  background-color: var(--monokai-pink);
+  color: #000000;
+}
+
