@@ -7,7 +7,7 @@ document.addEventListener("keydown", function (e) {
 });
 /// eruda.js
 document.addEventListener("keydown", function (e) {
-    if (.key == "~" && e.ctrlKey && e.altKey) {
+    if (e.key == "?" && e.ctrlKey) {
         if (!window.eruda) {
             let script = document.createElement("script");
             script.src = "https://cdn.jsdelivr.net/npm/eruda";
