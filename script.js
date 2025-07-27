@@ -4,10 +4,7 @@ document.addEventListener("keydown", function (e) {
 		let js = prompt("JS Here:");
         eval(js);
 	}
-});
-/// eruda.js
-document.addEventListener("keydown", function (e) {
-    if (e.key == "?" && e.ctrlKey) {
+	if (e.key == "?" && e.ctrlKey) {
         if (!window.eruda) {
             let script = document.createElement("script");
             script.src = "https://cdn.jsdelivr.net/npm/eruda";
