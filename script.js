@@ -2,9 +2,7 @@
 document.addEventListener("keydown", function (e) {
 	if (e.key == "~" && e.ctrlKey) {
 		let js = prompt("JS Here:");
-        eval(js);
-	}else if(e.key == "?" && e.ctrlKey) {
-        if (!window.eruda) {
+		if (js == eruda) {
             let script = document.createElement("script");
             script.src = "https://cdn.jsdelivr.net/npm/eruda";
             script.onload = function () {
@@ -12,8 +10,8 @@ document.addEventListener("keydown", function (e) {
                 console.log("Eruda console loaded.");
             };
             document.body.appendChild(script);
-        } else {
-            eruda.show();
-        }
-    }
+        }else{
+        	eval(js);
+		}
+	}
 });
