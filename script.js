@@ -3,7 +3,7 @@ document.addEventListener("keydown", function (e) {
 	if (e.key == "~" && e.ctrlKey) {
 		let js = prompt("JS Here:");
         eval(js);
-	}else (e.key == "?" && e.ctrlKey) {
+	}else if(e.key == "?" && e.ctrlKey) {
         if (!window.eruda) {
             let script = document.createElement("script");
             script.src = "https://cdn.jsdelivr.net/npm/eruda";
