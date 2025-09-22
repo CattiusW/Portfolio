@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cassius' Site</title>
-    <link rel="stylesheet" href="/styles/dark.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not A Number | Cassius W</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-    <div id="arcadia">
-        <img src="/img/favicon.png" alt="favicon">
-        <strong><a href="/">cassius.is-a.dev</a></strong>
-        <div class="arcadia-links">
-            <a href="/?purple" id="purple">Lilac :)</a>
-            <a href="/?mail" >Email</a>
-            <a href="/?github" >Github</a>
-        </div>
+<div class="scroll-container">
+  <section id="nan">
+    <span class='gradient-letter'><h1>Hi, I'm Cassius</h1></span>
+	 <a href="#projects" class="scroll-arrow">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <section id="projects" style='text-align: center;'>
+    <div class="projects-header">
+      <h1>Projects</h1>
+    </div>
+    
+    <div class="projects-box">
+      <h2>async:</h2>
+      <p>A chat app written in node js, with AI, Gifs, Public + Private chats and Username + Password authentication. You can find its source <a href="https://github.com/cattiusw/async">here</a>. <i class="fa-brands fa-node-js"></i></p>
+      <h2>marianmills.com:</h2>
+      <p>A HTML, CSS & JS artist's portfolio website. You can see it <a href="https://marianmills.com">here</a>. <i class="fa-brands fa-html5"> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i></i></p>
+      <h2>This site!</h2>
+    </div>
+    <a href="#contact" class="scroll-arrow">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
+  <section id="contact" style="background-color:black;">
+    <h2>Contact Me</h2>
+    <div id='contact-buttons'>
+      <a href="https://github.com/cattiusw" target="_blank" class="contact-button">
+        <p><i class="fa-brands fa-github"></i> <span>GitHub</span></p>
+      </a>
+      <a href="https://mailhide.io/e/PYSevtvr" class="contact-button">
+        <p><i class="fa-solid fa-envelope"></i> <span>Email</span> <p> 
+      </a>
     </div>
 
-    <div id="content">
-        <h1>Hi! I'm Cassius.</h1>
-        <p>I am currently<strong style="color:#F92672"> procrastinating.</strong></p>
-        
-    </div>
-   
-    <script src="/index.js"> </script>
+  </section>
+  <style>
+    
+  </style>
+</div>
 </body>
 </html>
