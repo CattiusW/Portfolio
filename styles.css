@@ -6,14 +6,12 @@ html, body {
   scroll-behavior: smooth;
   overflow: auto;
 }
-
 .scroll-container {
   height: 100vh; /* Takes up the full height of the viewport */
   overflow-y: scroll; /* Makes the container scrollable vertically */
   scroll-snap-type: y mandatory; /* Ensures snapping to full sections */
   scroll-behavior: smooth; /* Provides a smooth transition when snapping or using internal links */
 }
-
 /* Sections that Snap */
 .scroll-container section {
   height: 100vh; /* Each section takes up the full viewport height */
@@ -23,7 +21,6 @@ html, body {
   align-items: center;
   flex-direction: column;
 }
-
 /* Vertical Snap Scrolling Container */
 .container {
   height: 100vh;
@@ -31,7 +28,6 @@ html, body {
   scroll-snap-type: y mandatory;
   scroll-padding-top: 0;
 }
-
 /* Section Snap Alignment */
 section {
   height: 100vh;
@@ -41,7 +37,6 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
 /* Hero Section */
 #nan {
   text-align: center;
@@ -52,13 +47,12 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 h1 {
   font-size: 8vw;
-  background: linear-gradient(45deg, #8e2de2, #ff6ec4);
+  background: linear-gradient(0deg, #8e2de2, #ff6ec4);
   background-size: 200% 100%;
   background-position: 0% center;
-  animation: moveGradient 8s ease-in-out infinite;
+  /*animation: moveGradient 8s ease-in-out infinite;*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -75,7 +69,6 @@ h1 {
   text-align: center;
   margin: 0;
 }
-
 h2 {
   font-size: 4vw;
   background: linear-gradient(45deg, #8e2de2, #ff6ec4);
@@ -87,7 +80,6 @@ h2 {
   text-align: center;
   margin: 0;
 }
-
 a {
     text-decoration: none;
     background: linear-gradient(45deg, #8e2de2, #ff6ec4);
@@ -97,7 +89,6 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 i {
     text-decoration: none;
     background: linear-gradient(45deg, #8e2de2, #ff6ec4);
@@ -107,7 +98,6 @@ i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .opacity {
   background: linear-gradient(45deg, rgba(142, 45, 226, 0.4), rgba(255, 110, 196, 0.2));
   background-size: 200% 100%;
@@ -116,12 +106,9 @@ i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
 .opacity-wrapper {
   opacity: 0.4;
 }
-
 .dev-text {
   background: linear-gradient(45deg, #8e2de2, #ff6ec4);
   background-size: 200% 100%;
@@ -139,16 +126,13 @@ i {
   animation: bounce 2s infinite;
   transition: color 0.3s ease;
 }
-
 .scroll-arrow:hover {
   color: #ff6ec4;
 }
-
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
 }
-
 /* Button Styling */
 button {
   margin-top: 2rem;
@@ -161,11 +145,9 @@ button {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 button:hover {
   background-color: #ff6ec4;
 }
-
 /* Second Section */
 #projects {
   height: 100vh;
@@ -175,7 +157,6 @@ button:hover {
   padding: 0;
   overflow: hidden;
 }
-
 /* Scrollable Content Container */
 .projects-content {
   height: 100%;
@@ -185,7 +166,6 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-
 /* Sticky Header */
 .projects-header {
   position: sticky;
@@ -205,8 +185,6 @@ button:hover {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
-
 .projects-box {
   margin: 2rem auto;
   background-color: rgba(0, 0, 0, 0.6);
@@ -229,24 +207,20 @@ button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   text-align: left;
 }
-
 .projects-box h2 {
   text-align: left;
   margin-top: 0;
   padding-bottom: 0.2rem;
 }
-
 .projects-box ul {
   list-style: none;
   padding: 0;
   margin: 1rem 0 0 0;
 }
-
 .projects-box li {
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 /* Horizontal Snappy Scroll Gallery */
 .projects-gallery {
   display: flex;
@@ -257,20 +231,16 @@ button:hover {
   scrollbar-width: thin;
   scrollbar-color: #8e2de2 #000;
 }
-
 .projects-gallery::-webkit-scrollbar {
   height: 8px;
 }
-
 .projects-gallery::-webkit-scrollbar-track {
   background: #000;
 }
-
 .projects-gallery::-webkit-scrollbar-thumb {
   background-color: #8e2de2;
   border-radius: 4px;
 }
-
 /* Project Items */
 .project-item {
   flex: 0 0 auto;
@@ -282,11 +252,9 @@ button:hover {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-
 .project-item:hover {
   transform: scale(1.05);
 }
-
 .project-item img {
   width: 250px;
   height: auto;
@@ -294,8 +262,8 @@ button:hover {
   object-fit: cover;
 }
 .contact{
-  	height:100vh;
-	background-color: #000;
+          height:100vh;
+        background-color: #000;
 }
 /* Gradient Animation */
 @keyframes moveGradient {
@@ -303,7 +271,6 @@ button:hover {
   50% { background-position: 100% center; }
   100% { background-position: 0% center; }
 }
-
 /* Corrected Contact Button Styles */
 .contact-buttons {
   display: flex;
@@ -311,7 +278,6 @@ button:hover {
   gap: 1rem;
   margin-top: 2rem;
 }
-
 .contact-button {
   display: inline-flex;
   align-items: center;
@@ -323,25 +289,21 @@ button:hover {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .contact-button:hover {
   background-color: #ff6ec4; /* Pink on hover */
   transform: translateY(-2px);
 }
 /* Container for the dot animation */
-
-
   /* Container for the dot animation */
 .bounce-dot-container {
+         
   background-size: 20vh;
-  background: linear-gradient(45deg, #8e2de2, #ff6ec4);
-  animation: moveGradient 8s ease-in-out infinite;
+  background: linear-gradient(0deg, #8e2de2, #ff6ec4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative; /* This is needed for absolute positioning of the dot */
   display: inline-block; /* Allows the span to have width and height */
-
-
 }
-
 /* Corrected CSS selector for the dot */
 .bounce-dot-container::after {
    background: linear-gradient(45deg, #8e2de2, #ff6ec4);
@@ -350,14 +312,12 @@ button:hover {
   content: '.';
   display: inline-block;
   position: absolute;
-  top: -20vh; /* Adjust vertical position */
-  right: 0.12vw;
+  top: -7vh; /* Adjust vertical position */
+  right: 0vw;
   animation: bounce-dot 1.7s infinite;
   transform-origin: 50% 100%;
-
   z-index: 1; /* Make sure the dot appears above other elements */
 }
-
 /* Define the bouncing motion with @keyframes */
 @keyframes bounce-dot {
   /* At the start and end of the bounce, the ball is its normal shape. */
@@ -377,12 +337,7 @@ button:hover {
     transform: translateY(-5px) scale(1.1, 0.9);
   }
 }
-
 }
-
-
-
-
 .contact-button i {
   /* This is the key change to override the global gradient */
   color: #000;
