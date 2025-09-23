@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Not A Number | Cassius W</title>
+  <title>Not A Number.dev</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,16 +13,18 @@
 <body>
 <div class="scroll-container">
   <section id="nan">
-    <span class='gradient-letter'><h1>Hi, I'm Cass<span class="bounce-dot-container gradient-letter">ı</span>us.</h1></span>
-         <a href="#projects" class="scroll-arrow">
+	<h1 class="stagger-header"><span class="char">H</span><span class="char">i</span><span class="char">,</span><span class="char"> </span> <span class="char">I</span><span class="char">'</span><span class="char">m</span><span class="char"> </span> <span class="char">C</span><span class="char">a</span><span class="char">s</span><span class="char">s</span><span class="char" id="target-i">i</span><span class="char">u</span><span class="char">s</span><span class="char">.</span></h1>
+
+	 <a href="#projects" class="scroll-arrow">
       <i class="fas fa-arrow-down"></i>
     </a>
   </section>
+
   <section id="projects" style='text-align: center;'>
     <div class="projects-header">
-      <h1>Projects</h1>
+      <h1>Random Stuff:</h1>
     </div>
-   
+    
     <div class="projects-box">
       <h2>async:</h2>
       <p>A chat app written in node js, with AI, Gifs, Public + Private chats and Username + Password authentication. You can find its source <a href="https://github.com/cattiusw/async">here</a>. <i class="fa-brands fa-node-js"></i></p>
@@ -41,10 +43,37 @@
         <p><i class="fa-brands fa-github"></i> <span>GitHub</span></p>
       </a>
       <a href="https://mailhide.io/e/PYSevtvr" class="contact-button">
-        <p><i class="fa-solid fa-envelope"></i> <span>Email</span> <p>
+        <p><i class="fa-solid fa-envelope"></i> <span>Email</span> <p> 
       </a>
     </div>
+
   </section>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.stagger-header');
+  const characters = header.querySelectorAll('.char');
+  const targetI = document.getElementById('target-i');
+  
+  // Start the staggered animation on page load
+  header.classList.add('animated');
+
+  // Stagger the animation delay for each character
+  characters.forEach((char, index) => {
+    char.style.animationDelay = `${index * 0.04}s`; // Adjust as needed
+  });
+
+  // Wait for the last character's animation to finish
+  const lastCharIndex = characters.length - 1;
+  characters[lastCharIndex].addEventListener('animationend', () => {
+    
+    // Replace the 'i' with the special 'ı'
+    targetI.textContent = 'ı';
+
+    // Apply the bouncing and gradient styles
+    targetI.classList.add('bounce-dot-container');
+
+  }, { once: true }); // Ensure the event only fires once
+});
+</script>
 </div>
 </body>
 </html>
